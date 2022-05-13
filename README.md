@@ -266,3 +266,12 @@ A comprehensive documentation, with examples, is now available in
 `ahrs` moves away from plotting and data handling submodules to better focus in the algorithmic parts. Submodules `io` and `plot` are not built in the package anymore, and will be entirely removed from the base code in the next release.
 
 This way you can also choose your favorite libraries for data loading and visualization. This also means, getting rid of its dependency on `matplotlib` too.
+
+## Run Example data (working)
+
+the example data is use the 9-axis imu and ekf algorithm to get the attitude and heading. There still some parameters need modification to get the better result.
+
+```bash
+cd example
+python3.8 test_data.py
+```
